@@ -11,7 +11,7 @@
 * 执行命令
 ```bash
 # Clone this repository
-git clone https://github.com/koalaylj/xlsx2json.git
+git clone https://github.com/smiger/xlsx2json.git
 # Go into the repository
 cd xlsx2json
 # Install dependencies
