@@ -59,3 +59,54 @@ npm install
 }
 ```
 * 执行`export.sh|export.bat`即可将`./excel/*.xlsx` 文件导成json并存放到 `./json` 下。json名字以excel的sheet名字命名。
+#### 示例1 (参考./excel/game_rule.xlsx)   
+![excel](./docs/image/excel-1.png)
+![excel](./docs/image/excel-2.png)
+
+对应的json如下(有省略)
+```
+{
+  "1": {
+    "rId": 1,
+    "order": 2,
+    "key": "zhuang_1",
+    "name": "名称1",
+    "groups": [
+      {
+        "id": 1,
+        "rId": 1,
+        "name": "局数:",
+        "showRule": 1,
+        "type": "round",
+        "valueType": "normal",
+        "groupName": "round",
+        "items": [
+          {
+            "id": 1,
+            "order": 1,
+            "realCol": null,
+            "selected": 1,
+            "value": 10
+          },
+          {
+            "id": 1,
+            "order": 2,
+            "realCol": null,
+            "selected": null,
+            "value": 10
+          }
+        ]
+      },
+      ......省略......
+    ],
+    "values": [
+      {
+        "rId": 1,
+        "value": "a1",
+        "key": "zz"
+      }
+    ]
+  },
+  ......省略......
+}
+```
